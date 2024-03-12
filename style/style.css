@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@font-face {
-  font-family: "Mongolian Baiti";
-  src: url(../media/fonts/MongolianBaiti.ttf);
-  font-weight: 400;
-}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +7,15 @@
   text-decoration: none;
   border: none;
   outline: none;
+  font-family: "Montserrat";
+}
+
+.mob {
+  display: none;
+}
+
+.desk {
+  display: inherit;
 }
 
 body, html {
@@ -32,10 +36,16 @@ header {
   left: 0;
   width: 100%;
   z-index: 8;
+  transition: all 0.4s ease;
 }
 header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+header.dixed {
+  background: rgba(17, 17, 31, 0.4);
+  padding: 10rem 0;
 }
 
 .headerLeft {
@@ -63,7 +73,7 @@ header .container {
 }
 
 .headerNavItem {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 18rem;
   font-weight: 400;
   line-height: 32rem;
@@ -72,7 +82,7 @@ header .container {
   color: white;
 }
 .headerNavItem a {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 18rem;
   font-weight: 400;
   line-height: 32rem;
@@ -91,7 +101,7 @@ header .container {
   width: 229rem;
   height: 46rem;
   border-radius: 1000rem;
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 20rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -131,7 +141,7 @@ header .container {
 }
 
 .frontHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 60rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -139,15 +149,17 @@ header .container {
   margin-bottom: 60rem;
   color: white;
   width: 984rem;
+  text-transform: uppercase;
 }
 
 .frontSubtitle {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 32rem;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
   color: white;
+  text-transform: uppercase;
 }
 
 .frontBg {
@@ -183,7 +195,7 @@ header .container {
 }
 
 .aboutUsText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -239,7 +251,7 @@ header .container {
 }
 
 .discText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -288,7 +300,7 @@ header .container {
 }
 
 .plussText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 32rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -400,7 +412,7 @@ header .container {
 }
 
 .plussBigText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 32rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -524,7 +536,7 @@ section {
 }
 
 .dealItemBigText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -658,7 +670,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 20rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -709,7 +721,7 @@ section {
 }
 
 .contactLeftBtnInfoText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -718,7 +730,7 @@ section {
 }
 
 .contactsLeftBtnInfoTime {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -793,7 +805,7 @@ section {
 }
 
 .aboutUsMainSubHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 24rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -894,7 +906,7 @@ section {
 }
 
 .celItemTextText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 16rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1002,7 +1014,7 @@ section {
 }
 
 .staffHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 42rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1069,7 +1081,7 @@ section {
 }
 
 .staffItemCloseText {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 16rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1092,7 +1104,7 @@ section {
 }
 
 .staffInfoName {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1104,7 +1116,7 @@ section {
 .staffItemService {
   width: 310rem;
   margin-bottom: 30rem;
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 20rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1133,7 +1145,7 @@ section {
 }
 
 .staffItemStach {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 28rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1147,7 +1159,7 @@ section {
 }
 
 .staffItemListItem {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 20rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1171,7 +1183,7 @@ section {
 }
 
 .staffItemDop {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 20rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1208,7 +1220,7 @@ section {
 }
 
 .dealsHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 42rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1259,7 +1271,7 @@ section {
 }
 
 .dealsMainHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 38rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1298,7 +1310,7 @@ section {
 }
 
 .bigDealsListItemHeading {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 22rem;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1308,10 +1320,670 @@ section {
 }
 
 .bigDealsListItemprice {
-  font-family: "Mongolian Baiti";
+  font-family: "Montserrat";
   font-size: 26rem;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.closePopups {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 9;
+  transform: translateY(-200vh);
+}
+.closePopups.active {
+  transform: translateY(0);
+}
+
+.discountMain {
+  margin-bottom: 130rem;
+  margin-top: 270rem;
+}
+.discountMain .plussSlide {
+  height: 730rem;
+  position: relative;
+  margin-bottom: 56rem;
+}
+.discountMain .plussSlide:last-child {
+  margin-bottom: 0;
+}
+.discountMain .plussSlide .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.discountMain .plussSlide .container .plussInfo {
+  margin-top: 0;
+}
+
+.discountHEading {
+  font-size: 42rem;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 80rem;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .desk {
+    display: none;
+  }
+  .mob {
+    display: inherit;
+  }
+  body, html {
+    font-size: 0.2463054187vw;
+  }
+  .container {
+    width: 377rem;
+    margin: 0 15rem;
+  }
+  .headerLigoLink {
+    width: 29rem;
+    height: 46rem;
+  }
+  .headerNavList {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20rem;
+    margin-bottom: 50rem;
+  }
+  .headerNavItem {
+    font-size: 22rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+  .headerNavItem a {
+    font-size: 22rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+  .headerRight {
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerButton {
+    height: 46rem;
+    width: 229rem;
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    flex-shrink: 0;
+    margin: 0;
+    margin-bottom: 60rem;
+  }
+  .headerSetiItem {
+    width: 43rem;
+    height: 43rem;
+  }
+  .headerMobMenuOpen {
+    width: 28rem;
+    height: 16rem;
+  }
+  .headerMobMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #11111F;
+    z-index: 20;
+    transform: translateY(-200vh);
+    transition: all 0.4s ease;
+  }
+  .headerMobMenu.active {
+    transform: translateY(0);
+  }
+  .headermobMenuClose {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 47rem;
+  }
+  .headerMobMenuCloseBtn {
+    width: 24rem;
+    height: 24rem;
+  }
+  .mobHeaderMenuLinks {
+    display: flex;
+  }
+  .frontBlock {
+    width: 100vw;
+    height: 100vh;
+  }
+  .frontHeading {
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30rem;
+  }
+  .frontSubtitle {
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .frontBg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aboutUs {
+    overflow: visible;
+    overflow-x: hidden;
+  }
+  .aboutUs .container {
+    padding: 105rem 0 128rem 0;
+  }
+  .aboutUsHeading {
+    width: 100%;
+    font-size: 24rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30rem;
+  }
+  .aboutUsText {
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+  }
+  .aboutUsButton {
+    width: 100%;
+  }
+  .aboutBg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500rem;
+    height: 100rem;
+  }
+  .discount {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 70rem;
+  }
+  .discHeading {
+    width: 100%;
+    font-size: 24rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin-bottom: 30rem;
+    text-align: center;
+  }
+  .discText {
+    width: 100%;
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .discBg {
+    bottom: -20rem;
+  }
+  .swiper {
+    width: 100vw;
+    height: 435rem;
+  }
+  .plussSlide .container {
+    top: 0;
+  }
+  .plussInfo {
+    margin-top: 90rem;
+  }
+  .plussInfo .plussBtn {
+    margin-top: 70px;
+  }
+  .plussHeading {
+    font-size: 24rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin-bottom: 30rem;
+  }
+  .plussText {
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .aboutUsButton {
+    width: 100%;
+  }
+  .discountBlock {
+    font-weight: 600;
+    font-size: 32rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    left: 230rem;
+    top: 154rem;
+    padding: 0;
+  }
+  .discountBlock.price {
+    top: 222rem;
+  }
+  .discountBlock.priceRight {
+    flex-direction: row;
+    -moz-column-gap: 20rem;
+         column-gap: 20rem;
+    top: 156rem;
+    left: 0rem;
+  }
+  .discountBlock.last {
+    top: 191rem;
+    left: 255rem;
+  }
+  .plussDiscount {
+    font-weight: 600;
+    font-size: 32rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 70rem;
+    padding: 0 15rem;
+  }
+  .plussSlideBgImg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .discountzach {
+    font-size: 32rem;
+  }
+  .plussBigText {
+    font-size: 16rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 250rem;
+    margin-top: 74rem;
+  }
+  .aboutBg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .deals {
+    padding: 50rem 0 100rem 0;
+  }
+  .dealsHeading {
+    margin-bottom: 50rem;
+    font-size: 24rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+  .dealsWraper {
+    display: flex;
+    flex-direction: column;
+  }
+  .dealItemName {
+    font-size: 22rem;
+  }
+  .dealItemBig {
+    height: 325rem;
+    padding: 60rem 23rem;
+  }
+  .dealItemBigText {
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 40rem;
+    width: 100%;
+  }
+  .proizvoditeli {
+    padding: 90rem 0 140rem 0;
+  }
+  .proizvodHeading {
+    font-size: 24rem;
+    margin-bottom: 60rem;
+  }
+  .proizvodBeguStrokItem {
+    height: 65rem;
+  }
+  .proizvodImg {
+    height: 65rem;
+  }
+  .contacts {
+    padding-top: 50rem;
+    border-radius: 30rem;
+  }
+  .contactsHeading {
+    font-size: 24rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30rem;
+  }
+  .contactsWraper {
+    flex-direction: column;
+  }
+  .contactsLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactsLeftTop {
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .contactsLeftPhone {
+    margin-right: 0;
+  }
+  .contactsLeftPhoneSvg {
+    width: 30rem;
+    height: 30rem;
+  }
+  .contactsLeftPhoneText {
+    font-size: 24rem;
+    font-weight: 500;
+    letter-spacing: 0em;
+  }
+  .contactsLeftButton {
+    width: 100%;
+  }
+  .contactsLeftRight.mob {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 15rem;
+         column-gap: 15rem;
+    margin-bottom: 22rem;
+  }
+  .contactsLeftBtn {
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .contactsLeftBtnSvg {
+    width: 30rem;
+    height: 30rem;
+    flex-shrink: 0;
+  }
+  .contactLeftBtnInfoText {
+    font-size: 24rem;
+    margin-bottom: 20rem;
+  }
+  .contactsLeftBtnInfoTime {
+    font-size: 22rem;
+    text-align: left;
+  }
+  .contactsRight {
+    width: 372rem;
+    height: 285rem;
+    margin-top: 20rem;
+    margin-left: 0;
+  }
+  .staff {
+    margin-top: 0;
+    padding-top: 150rem;
+  }
+  .staff .container {
+    position: relative;
+  }
+  .staffWraper {
+    grid-template-columns: repeat(2, 174rem);
+    row-gap: 20rem;
+    -moz-column-gap: 20rem;
+         column-gap: 20rem;
+  }
+  .staffItem {
+    position: Static;
+  }
+  .staffItem .staffInfo {
+    max-height: 0;
+    width: 360rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+  }
+  .staffItem.active .staffInfo {
+    width: 360rem;
+    padding-top: 20rem;
+    position: fixed;
+    max-height: 100vh;
+    padding: 0 16rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  .staffItemImg {
+    width: 100%;
+    height: 239rem;
+  }
+  .staffInfoName {
+    font-size: 22rem;
+    margin-bottom: 30rem;
+  }
+  .staffItemService {
+    font-size: 16rem;
+    margin-bottom: 20rem;
+  }
+  .staffItemLine {
+    width: 270rem;
+  }
+  .staffItemStach {
+    font-size: 22rem;
+    margin-bottom: 30rem;
+  }
+  .staffItemListItem {
+    font-size: 16rem;
+  }
+  .staffItemDop {
+    font-size: 15rem;
+    width: 100%;
+  }
+  .staffItem:nth-child(3n).active .staffInfo {
+    width: 360rem;
+    padding-top: 20rem;
+    position: fixed;
+    max-height: 100vh;
+    padding: 0 16rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+  .staffItem:nth-child(3n) .staffInfo {
+    max-height: 0;
+    width: 360rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 99;
+  }
+  .closePopups {
+    z-index: 8;
+    transition: all 0.4s ease;
+  }
+  .bigDealsWraper {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUsMain {
+    margin-top: 140rem;
+    margin-bottom: 0;
+  }
+  .aboutUsMain::after {
+    width: 100vw;
+    left: 0;
+    overflow: hidden;
+  }
+  .aboutUsMainHeading {
+    font-size: 26rem;
+    margin-bottom: 50rem;
+  }
+  .aboutUsMainTexts {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .aboutUsMainHeadingText {
+    font-size: 20rem;
+    text-align: left;
+  }
+  .aboutUsMainSubHeading {
+    font-size: 16rem;
+  }
+  .aboutMainBg {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 40rem;
+    width: 377rem;
+    margin-left: 15rem;
+    border-radius: 10rem;
+  }
+  .aboutMainBgInfo {
+    width: 209rem;
+    height: 211rem;
+    border-radius: 10rem;
+    font-size: 40rem;
+  }
+  .aboutUsMainBgImg {
+    height: 211rem;
+    width: 377rem;
+  }
+  .celHeading {
+    font-size: 24rem;
+    margin-bottom: 60rem;
+  }
+  .celWraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25rem;
+  }
+  .celItem {
+    width: 100%;
+    height: 233rem;
+  }
+  .celItemTextText {
+    text-transform: uppercase;
+  }
+  .priorety {
+    padding-bottom: 140rem;
+  }
+  .priorety .container {
+    flex-direction: column;
+  }
+  .prioretyInfo {
+    width: 100%;
+    margin-bottom: 50rem;
+  }
+  .prioretyHeading {
+    width: 100%;
+    font-size: 24rem;
+    margin-bottom: 20rem;
+  }
+  .prioretyText {
+    font-size: 15rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .prioretyBg {
+    width: 280rem;
+    height: 310rem;
+  }
+  .aboutWhayWe {
+    position: relative;
+    height: 432rem;
+  }
+  .aboutWhayWe .swiper-slide .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUsBlock {
+    position: relative;
+    height: 432rem;
+  }
+  .aboutUsBlock .plussText {
+    font-size: 16rem;
+    width: 100%;
+  }
+  .plussInfo {
+    width: 100%;
+  }
+  .plussHeading {
+    font-size: 24rem;
+  }
+  .bigDealsItem {
+    width: 100%;
+  }
+  .dealsMain {
+    flex-flow: row-reverse;
+    padding: 34rem 19rem;
+    height: 146rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .dealsMainBg::after {
+    width: 100rem;
+    height: 100rem;
+  }
+  .dealsMainBgImg {
+    width: 138rem;
+    height: 93rem;
+  }
+  .dealsMainHeading {
+    margin: 0;
+    font-size: 24rem;
+  }
+  .digDeaslItemListItem {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20rem;
+    margin-bottom: 10rem;
+  }
+  .bigDealsListItemHeading {
+    font-size: 16rem;
+    margin-bottom: 20rem;
+  }
+  .bigDealsListItemprice {
+    font-size: 18rem;
+  }
+  .bigDealsItem.active .bigDealsItemList {
+    margin-top: 20rem;
+  }
+  .discountMain {
+    margin-top: 150rem;
+    margin-bottom: 120rem;
+  }
+  .discountHEading {
+    font-size: 26rem;
+    margin-bottom: 60rem;
+  }
+  .discountMain .plussSlide {
+    height: 460rem;
+    margin-bottom: 30rem;
+  }
 }/*# sourceMappingURL=style.css.map */
